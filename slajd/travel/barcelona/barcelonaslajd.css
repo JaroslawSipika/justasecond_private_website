@@ -1,0 +1,32 @@
+.button {
+    background-color: #282828;
+    border-color: #282828;
+}
+.button:hover {
+    background-color: #00405d;
+    border-color: #00405d;
+
+}
+
+.img1{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img2{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:1000px) {
+    .img1{
+        width:100%;
+    }
+    .img2{
+        width:100%;
+    }
+}

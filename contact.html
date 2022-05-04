@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="description" content="web site to description my life"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://jaroslawsipika.com"/>
+    <meta property="og:title" content="jaroslawsipika | Home"/>
+    <meta property="og:site_name" content="jaroslawsipika | Home"/>
+    <meta property="og:description" content="web site to description my life"/>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>justasecond-contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="//static.rmt.pl/cache.ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+</head>
+
+<body>
+<div id="loader-wrapper">
+    <div id="loader">
+        <div id="box"></div>
+        <div id="hill"></div>
+    </div>
+</div>
+<div id="main" class="scroll-container">
+    <section class="section1" id="section1">
+        <div class="header">
+            <div class="head">
+                <nav class="list0">
+                    <div class="logo">
+                        <a class="pod" href="home.html">JUST A SECOND</a>
+                    </div>
+                </nav>
+                <nav class="list">
+                    <div class="mountains">
+                        <a class="pod" href="mountains.html">Mountains</a>
+                    </div>
+                    <div class="travels">
+                        <a class="pod" href="travel.html">Travels</a>
+                    </div>
+                    <div class="work">
+                        <a class="pod" href="work.html">Work</a>
+                    </div>
+                </nav>
+                <nav class="list1">
+                    <div class="sound">
+                        <a class="pod" href="#">Sound</a>
+                    </div>
+                    <div class="contact">
+                        <a class="pod" href="contact.html">Contact</a>
+                    </div>
+                    <div class="about">
+                        <a class="pod" href="#">About</a>
+                    </div>
+                </nav>
+                <nav class="list2">
+                    <div class="facebook">
+                        <a href="https://www.facebook.com/jaroslaw.sipika/" class="fa fa-facebook"></a>
+                    </div>
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/jaroslawsipika/" class="fa fa-instagram"></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="front">
+            <h1>Contact.</h1>
+            <h6>The purpose of our lives is to be happy.</h6>
+        </div>
+    </section>
+    <section class="section" id="section2">
+            <div class="okno">
+                <div class="okno1">
+                   <div id="send_form_status"></div>
+                   <form class="form" id="contact_form" method="post" action="/send_form.php">
+                       <div class="text1">
+                           <input type="text" class="text2" placeholder="Enter your Name" name="name" id="name">
+                       </div>
+                       <div class="email1">
+                           <input type="text" class="email2" placeholder="Enter a email address" name="email" id="email">
+                       </div>
+                       <div class="wiadomosc11">
+                           <textarea class="wiadomosc22" placeholder="Enter your message" name="message" id="message"></textarea>
+                       </div>
+                       <div class="button111">
+                           <button id="sendBtn" class="button11">Submit</button>
+                       </div>
+                   </form>
+                   <div class="text111">Every feedback you provide, any suggestions you have and any new idea you like to share — please don’t hesitate, write to me immediately.</div>
+                   <div class="text1111"></div>
+                </div>
+                <div class="okno2">
+                    <img class="okno22" src="image/Jaro1.jpg"/>
+                    <div class="okno222">We would<br><b>&nbsp;&nbsp;love to hear</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from you!</div>
+                </div>
+
+            </div>
+    </section>
+
+    <div class="parallax parallax-1"></div>
+</div>
+
+<footer class="footer">
+    <div class="footer1">
+        <div class="logo1">
+            <img class="logo11" src=""/>
+        </div>
+        <div class="kontakt">
+            <h3 class="kontakt1"><span>KONTAKT</span></h3>
+            <div class="info">
+                <div class="emailicon" href="mailto:jaroslaw.sipika@gmail.com">
+                    <i class="fa fa-envelope-o"></i>
+                    jaroslaw.sipika@gmail.com
+                </div>
+            </div>
+        </div>
+        <div class="korona">
+            <a href="https://buycoffee.to/justasecond" target="_blank"><img class="img12" src="https://buycoffee.to/btn/buycoffeeto-btn-primary.svg" alt="Postaw mi kawę na buycoffee.to"></a>
+        </div>
+    </div>
+
+</footer>
+<ul class="dots">
+    <li style="height:0px; z-index: 5; overflow: hidden;"><a href="#section1" class="dots1"></a></li>
+    <li style="height:0px; z-index: 5; overflow: hidden;"><a href="#section2" class="dots2"></a></li>
+</ul>
+
+
+<script>
+    window.sr = ScrollReveal();
+
+    sr.reveal('.zdjecie', {
+        reset: true,
+        delay: 300
+    });
+    sr.reveal('.zdjecie11', {
+        reset: true,
+        delay: 500
+    });
+    sr.reveal('h1,h2,h4,h5,h6', {
+        reset: true,
+        delay: 300
+    });
+
+
+    $(document).ready(function(){
+        $(".button1").click(function(){
+            $("#myDIV1").toggle();
+        });
+    });
+    $(document).ready(function(){
+        $(".button2").click(function(){
+            $("#myDIV2").toggle();
+        });
+    });
+    $(document).ready(function(){
+        $(".button3").click(function(){
+            $("#myDIV3").toggle();
+        });
+    });
+    $(document).ready(function(){
+        $(".button4").click(function(){
+            $("#myDIV4").toggle();
+        });
+    });
+
+
+</script>
+<script>
+    $(document).ready(function() {
+      $("html").on("submit","#contact_form",function(e){
+        e.preventDefault();
+        $("#send_form_status").html('').hide();
+        var data=$("#contact_form").serialize();
+        $.post("send_form.php",data,function(res){
+          $("#send_form_status").html(res.msg).show();
+          if(res.status==1){
+            $("#contact_form")[0].reset();
+          }
+        });
+      });
+    });
+</script>
+<script>
+    $(window).on("load",function() {
+        $("#loader-wrapper").fadeOut();
+    });
+</script>
+
+</body>
+
+<img src="image/IMG_20220313_152046.jpg"/>
+<!--
+<video autoplay loop muted>
+    <source type="video/mp4" src="Tatry.mp4" />
+    </video>
+-->
+</html>
+
+
+
+
+
+
